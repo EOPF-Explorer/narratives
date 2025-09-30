@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
+    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
+    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
+    "image": "assets/previews/fig1_2343121f-4431-4d41-92c4-cdad3a9d7577_preview.png"
+  }
+]
