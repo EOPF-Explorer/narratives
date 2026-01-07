@@ -1,4 +1,4 @@
-# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/fig/fig1.png" }-->
+# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://github.com/EOPF-Explorer/narratives/blob/ndci/chl-ndci/hero.png?raw=true" }-->
 
 #### Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data <!--{ style="font-size:1rem;opacity:0.7;margin-top:1rem;" }-->
 
@@ -14,7 +14,7 @@ Among these challenges, the proliferation of cyanobacteria – commonly known as
 
 Copernicus data 2025. <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}},{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.8,45.5] zoom=10.5 animationOptions="{duration:500}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.8,45.5] zoom=10.5 animationOptions="{duration:500}" }-->
 
 #### Northern Italy from Space
 
@@ -22,7 +22,7 @@ This distinctive lagoon system along Italy's Adriatic coast is instantly recogni
 
 <small>Image: Copernicus Sentinel-2 data 2022 cloudless, processed by EOX IT GmbH</small>
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}},{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
 
 #### The Venice Lagoon Ecosystem
 
@@ -87,7 +87,7 @@ This resulting in 9836 samples, which were separated into a training dataset of 
 Chl-a = 17.441e(4.7038*NDCI)        (2)
 ```
 
-![Calibration](image.png)
+![Calibration](https://github.com/EOPF-Explorer/narratives/blob/ndci/chl-ndci/calibration.png?raw=true)
 
 ## Applying NDCI to Venice Lagoon <!--{ as="eox-map" class="overlay-br" mode="tour" }-->
 
