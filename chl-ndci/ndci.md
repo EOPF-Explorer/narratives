@@ -14,7 +14,7 @@ Among these challenges, the proliferation of cyanobacteria – commonly known as
 
 Copernicus data 2025. <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.8,45.5] zoom=10.5 animationOptions="{duration:500}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}},{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.8,45.5] zoom=10.5 animationOptions="{duration:500}" }-->
 
 #### Northern Italy from Space
 
