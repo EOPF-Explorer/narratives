@@ -22,7 +22,7 @@ This distinctive lagoon system along Italy's Adriatic coast is instantly recogni
 
 <small>Image: Copernicus Sentinel-2 data 2022 cloudless, processed by EOX IT GmbH</small>
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}},{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
 
 #### The Venice Lagoon Ecosystem
 
