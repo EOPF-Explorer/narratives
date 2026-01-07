@@ -1,0 +1,14 @@
+[
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-6/ndvi.md",
+    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
+    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
+    "image": "assets/previews/fig1_f283d2c3-244c-4e6d-952f-8b03861b57cc_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-6/ndci.md",
+    "title": "Monitoring Cyanobacteria in Venice Lagoon",
+    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
+    "image": "assets/previews/hero_c5ff5367-3b7e-4da6-8865-3550857a247a_preview.png"
+  }
+]
