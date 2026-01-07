@@ -22,8 +22,7 @@ This distinctive lagoon system along Italy's Adriatic coast is instantly recogni
 
 <small>Image: Copernicus Sentinel-2 data 2022 cloudless, processed by EOX IT GmbH</small>
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
-
+### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}},{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:1000}" }-->
 #### The Venice Lagoon Ecosystem
 
 Welcome to the Venice Lagoon – the largest lagoon in the Mediterranean Sea, covering approximately 550 square kilometers. This remarkable ecosystem serves as a transition zone between terrestrial and marine environments, creating conditions that support exceptional biodiversity while remaining highly sensitive to environmental changes.
@@ -33,7 +32,6 @@ The lagoon's shallow waters (average depth just 1 meter) and restricted exchange
 <small>Image: Copernicus [Sentinel-2 L2A 12 May 2025](https://api.explorer.eopf.copernicus.eu/browser/external/api.explorer.eopf.copernicus.eu/stac/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250512T100611_N0511_R022_T32TQR_20250512T173114?.language=en)<br/>Natural color composite (Bands red, green, blue)</small>
 
 ### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/25107b35-eb1b-4171-8a54-b610a02b9c5c/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D&color_formula=gamma+rgb+1.45%2C+sigmoidal+rgb+6+0.15%2C+saturation+1.4"}}]' center=[12.4,45.49] zoom=12.3 animationOptions="{duration:1000}" }-->
-
 #### The Visible Problem
 
 Look closely at the water surface – those green to dark patches aren't just shadows or sediment. They're floating mats of cyanobacteria and other algae, visible even from 800 kilometers above Earth.
@@ -43,7 +41,6 @@ These surface blooms represent one of the lagoon's most pressing environmental c
 <small>Image: Copernicus [Sentinel-2 L2A 12 May 2025](https://api.explorer.eopf.copernicus.eu/browser/external/api.explorer.eopf.copernicus.eu/stac/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250512T100611_N0511_R022_T32TQR_20250512T173114?.language=en)<br/>Colored using gamma correction, sigmoidal contrast enhancement, and increased saturation to highlight surface features</small>
 
 ### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/453c1856-968a-4862-94cc-fe03da7d427a/tiles/{z}/{x}/{y}?time=%5B%222025-05-12%22%2C%222025-05-13%22%5D"}}]' center=[12.4,45.49] zoom=12.3 animationOptions="{duration:1000}" }-->
-
 #### A Closer Look at Algae Accumulation
 
 Let's switch to a different visualization that highlights floating aquatic plants and algae more clearly. This image uses a specialized algorithm designed to detect surface vegetation based on its unique spectral characteristics.
