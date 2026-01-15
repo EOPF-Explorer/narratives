@@ -1,4 +1,4 @@
-# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://github.com/EOPF-Explorer/narratives/blob/ndci/chl-ndci/hero.png?raw=true" }-->
+# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/NDCI/hero.png?raw=true" }-->
 
 #### Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data <!--{ style="font-size:1rem;opacity:0.7;margin-top:1rem;" }-->
 
@@ -84,7 +84,7 @@ This resulting in 9836 samples, which were separated into a training dataset of 
 Chl-a = 17.441e(4.7038*NDCI)        (2)
 ```
 
-![Calibration](https://github.com/EOPF-Explorer/narratives/blob/ndci/chl-ndci/calibration.png?raw=true)
+![Calibration](https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/NDCI/calibration.png?raw=true)
 
 ## Applying NDCI to Venice Lagoon <!--{ as="eox-map" class="overlay-br" mode="tour" }-->
 
@@ -206,8 +206,8 @@ This monitoring system is powered a custom version of openEO dedicated for readi
 
 You can reproduce, experiment and deploy you own openEO defined processes using a set of tools at you disposal on the EOPF Explorer platform:
 
-1. The **[NDCI Cyanobacteria Jupyter Notebook](https://github.com/EOPF-Explorer/narratives/blob/main/chl-ndci/openeo_ndci_cyanobacteria.ipynb)** available in the narratives repository of the project.
-2. **[openEO Studio](https://explorer.eopf.copernicus.eu/openeo-studio/)** - a visual interface to get started with openEO python API without caring about deploying any coding environment.
+1. The **[NDCI Cyanobacteria Jupyter Notebook](https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/NDCI/openeo_ndci_cyanobacteria.ipynb)** available in the narratives repository of the project.
+2. **[openEO Studio](https://studio.explorer.eopf.copernicus.eu/editor/ndci)** - a visual interface to get started with openEO python API without caring about deploying any coding environment.
 3. **[openEO Web Editor](https://editor.openeo.org/?server=https%3A%2F%2Fapi.explorer.eopf.copernicus.eu%2Fopeneo%2F)** - a web-based graphical editor to create and test openEO process graphs directly in your browser as well as deploy them as web services or user-defined processes.
 
 ### 📊 Data Source and Catalog
