@@ -180,7 +180,7 @@ The southern lagoon presents a mix of natural and anthropogenic influences. Area
 
 As water temperatures rise and daylight hours increase, cyanobacteria begin their annual cycle of growth. Spring conditions in the Venice Lagoon typically show moderate chlorophyll-a levels, with activity concentrated in nutrient-rich areas near freshwater inputs.
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/9551a434-c1a9-4600-bddb-d289f55c670e/tiles/{z}/{x}/{y}?time=%5B%222025-07-03%22%2C%222025-07-04%22%5D"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:300}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/openeo/services/xyz/9551a434-c1a9-4600-bddb-d289f55c670e/tiles/{z}/{x}/{y}?time=%5B%222025-07-26%22%2C%222025-07-27%22%5D"}}]' center=[12.3,45.45] zoom=11.5 animationOptions="{duration:300}" }-->
 
 #### Summer 2025: Peak Activity
 
