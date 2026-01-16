@@ -3,12 +3,12 @@
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_937bf3ef-ff1e-41e8-a815-3f1d0b7eb73a_preview.png"
+    "image": "assets/previews/hero_95cdc133-3158-404c-9347-a7ea098bd82f_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_225a3437-5965-47c9-bbfa-77acb0576fe6_preview.png"
+    "image": "assets/previews/fig1_3a7d2634-2780-4a51-a456-1a94d3488720_preview.png"
   }
 ]
