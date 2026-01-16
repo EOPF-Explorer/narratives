@@ -12,17 +12,15 @@ While the eruption was a devastating natural disaster, satellite imagery played 
 ## Seeing Through the Smoke <!--{ as="eox-map" class="overlay-br" mode="tour" }-->
 Sentinel-2 Data, October 10, 2021. <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250913T095041_N0511_R079_T33TVF_20250913T151113/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance/r10m:b04&variables=/measurements/reflectance/r10m:b03&variables=/measurements/reflectance/r10m:b02&rescale=0,0.25&color_formula=gamma rgb 1.3"}}]' center=[14.2,40.8] zoom="12" animationOptions="{duration:500}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T120331_N0500_R023_T28RBS_20230106T001906/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance/r10m:b04&variables=/measurements/reflectance/r10m:b03&variables=/measurements/reflectance/r10m:b02&rescale=0,0.25&color_formula=gamma rgb 1.3"}}]' center=[-17.91,28.61] zoom="13" animationOptions="{duration:500}" }-->
 #### True Color View
-*(Note: Visualizing 2025 Data from Vesuvius as a placeholder for unavailable La Palma 2021 data)*
 
 In the *True Color* rendering (using Red, Green, and Blue bands), the volcano's plume of smoke and ash is the most prominent feature. While we can see the path of destruction, the active lava flows are often obscured by the smoke or simply appear as dark rock.
 
 This view mimics what the human eye would see from space, but it misses the intense heat radiating from the ground. To see the "river of fire", we need to look beyond the visible spectrum.
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250913T095041_N0511_R079_T33TVF_20250913T151113/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance/r20m:b12&variables=/measurements/reflectance/r20m:b11&variables=/measurements/reflectance/r10m:b04&rescale=0,0.6"}}]' center=[14.2,40.8] zoom="12" animationOptions="{duration:500}" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2A_MSIL2A_20211010T120331_N0500_R023_T28RBS_20230106T001906/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance/r20m:b12&variables=/measurements/reflectance/r20m:b11&variables=/measurements/reflectance/r10m:b04&rescale=0,0.6"}}]' center=[-17.91,28.61] zoom="13" animationOptions="{duration:500}" }-->
 #### Unveiling the Lava (SWIR)
-*(Note: Visualizing 2025 Data from Vesuvius as a placeholder for unavailable La Palma [-17.85,28.61] 2021 data)*
 
 By switching to *Short-Wave Infrared (SWIR)* bands, the scene changes dramatically. The hot lava, reaching temperatures over 1000°C, emits intense radiation in the SWIR part of the spectrum.
 

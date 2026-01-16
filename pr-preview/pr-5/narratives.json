@@ -3,12 +3,12 @@
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-5/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Witnessing the 2021 Cumbre Vieja eruption through the eyes of Sentinel-2 satellites.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_dda43364-b72b-43dc-baeb-1a37297bcf8f_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_a4fe88dd-ac15-45dc-bb7a-ce343bd54b17_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-5/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_9e2cea6d-4e67-4699-962a-8f6375a7fb8c_preview.png"
+    "image": "assets/previews/fig1_f0e10470-27e6-42ba-b201-00f4b648088f_preview.png"
   }
 ]
