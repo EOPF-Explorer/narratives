@@ -3,12 +3,18 @@
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_95cdc133-3158-404c-9347-a7ea098bd82f_preview.png"
+    "image": "assets/previews/hero_1988b32c-6eca-496d-8150-65ed716ed0ad_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
+    "title": "River of Fire: La Palma Visualized",
+    "subtitle": "Witnessing the 2021 Cumbre Vieja eruption through the eyes of Sentinel-2 satellites.",
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_03fd8e14-ee4c-4bfc-81a9-b7b57b8332ce_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_3a7d2634-2780-4a51-a456-1a94d3488720_preview.png"
+    "image": "assets/previews/fig1_9a9df79b-e5e3-4a92-9912-6b74ad11aa6d_preview.png"
   }
 ]
