@@ -7,7 +7,7 @@ We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific sc
 
 ## Gathering Our Tools
 
-Before we embark, we need to pack our digital knapsack. We'll need `httpx` to communicate with the outside world (the API) and `ipyeoxelements`, our lens for viewing the geospatial data.
+We'll need `httpx` to communicate with the outside world (the API) and `ipyeoxelements`, our lens for viewing the geospatial data.
 
 
 ```python
