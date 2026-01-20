@@ -17,7 +17,7 @@ from ipyeoxelements import EOxMap, EOxLayercontrol
 from ipywidgets import HBox, Layout
 ```
 
-## Charting the Course
+## Selecting the data source
 
 Here, we define our data source, the EOPF-Explorer STAC API, specifically the `sentinel-2-l2a` collection.
 
