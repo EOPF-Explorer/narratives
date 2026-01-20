@@ -3,12 +3,12 @@
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-4/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_04737225-43be-4c28-b24c-557cc9ae2624_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_8065cb47-8f79-4a67-91f8-b761901fa27e_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-4/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_82a95694-0886-4872-a912-d76e63d2ab92_preview.png"
+    "image": "assets/previews/fig1_a221d447-078e-4d5d-b221-ea6f3ba2088d_preview.png"
   }
 ]
