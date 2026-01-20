@@ -19,7 +19,7 @@ from ipywidgets import HBox, Layout
 
 ## Charting the Course
 
-Every expedition needs a destination. Here, we define the coordinates of our data source, the EOPF-Explorer STAC API. We're specifically setting our sights on the `sentinel-2-l2a` collection.
+Here, we define our data source, the EOPF-Explorer STAC API, specifically the `sentinel-2-l2a` collection.
 
 ```python
 stac_endpoint = "https://api.explorer.eopf.copernicus.eu/stac/"
