@@ -1,7 +1,9 @@
 # A Journey into Cloud-Native Earth Observation <!--{ as="img" mode="hero" src="https://images.unsplash.com/photo-1633421878925-ac220d8f6e4f?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }-->
 
 ## Visualizing GeoZarr
-In this story, we'll explore the EOPF-Explorer client side rendered GeoZarr. We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific scene that catches our interest, and then—using the magic of GeoZarr and [EOxElements]() based on the latest [OpenLayers release]() we can visualize an item in the browser using web components, and [ipyeoxelements]() in a Python environment. We'll stream that high-resolution data directly onto an interactive map.
+In this story, we'll explore client-side rendered GeoZarr in Jupyter Notebooks and in the browser, using the same underlying technology. 
+
+We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific scene that catches our interest, and then—using GeoZarr and [EOxElements]() based on the latest [OpenLayers release]() we can visualize an item in the browser using web components, and [ipyeoxelements]() in a Python environment. We'll stream that high-resolution data directly onto an interactive map.
 
 ## Gathering Our Tools
 
