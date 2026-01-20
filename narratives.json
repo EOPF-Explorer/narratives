@@ -3,24 +3,24 @@
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_b6d27e3a-b844-4465-a478-113683a59bc8_preview.png"
+    "image": "assets/previews/hero_61566ea2-68b5-4ab7-b559-6131b4168c1e_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_70a517ae-31c3-4d30-8085-aef80e5ec3bb_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_28efb7c4-9bf7-4b8a-a6cb-871d0424305e_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Witnessing the 2021 Cumbre Vieja eruption through the eyes of Sentinel-2 satellites.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_b0de2531-e6f2-4e85-bf1b-749340005a8f_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_92dd2372-fe32-46da-bbee-a885abd47427_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_25f6f674-23db-4f4f-bb9c-30df5bda3b23_preview.png"
+    "image": "assets/previews/fig1_a8adea65-7cf4-45b1-aa37-e4d49054b774_preview.png"
   }
 ]

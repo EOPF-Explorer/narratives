@@ -3,12 +3,11 @@
 ## Visualizing GeoZarr
 In this story, we'll explore client-side rendered GeoZarr in Jupyter Notebooks and in the browser, using the same underlying technology. 
 
-We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific scene that catches our interest, and then—using GeoZarr and [EOxElements]() based on the latest [OpenLayers release]() we can visualize an item in the browser using web components, and [ipyeoxelements]() in a Python environment. We'll stream that high-resolution data directly onto an interactive map.
+We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific scene that catches our interest, and then—using GeoZarr and [EOxElements](https://github.com/EOX-A/EOxElements) based on the latest [OpenLayers dev release](https://www.npmjs.com/package/ol/v/10.7.1-dev.1768898466014) we can visualize an item in the browser using web components, and [ipyeoxelements](https://github.com/EOX-A/EOxElements-Jupyter) in a Python environment. We'll stream that high-resolution data directly onto an interactive map.
 
 ## Gathering Our Tools
 
 We'll need `httpx` to communicate with the outside world (the API) and `ipyeoxelements`, our lens for viewing the geospatial data.
-
 
 ```python
 import httpx
@@ -62,7 +61,7 @@ Fetched item: S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310
 
 ## Preparing the View
 
-With our item identified, we need to translate it into something our map can understand. We'll initialize a GeoZarr Tile layer with a base OpenStreetMap layer.
+With our item identified, we need to translate it into something our map can understand. We'll initialize a GeoZarr Tile layer and add the EOxCloudless Terrain baselayer.
 
 
 ```python
@@ -80,14 +79,17 @@ item_id = item["id"]
 zarr_url = get_geozarr_store(item)
 
 layers = [
-    # Add OpenStreetMap basemap
     {
         "type": "Tile",
         "properties": {
-            "id": "osm-basemap",
-            "title": "OpenStreetMap",
+            "id": "terrain-light",
+            "title": "Terrain Light",
         },
-        "source": {"type": "OSM"},
+        "source": {
+            "type": "XYZ",
+            "url": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+            "projection": "EPSG:3857",
+        },
     },
     {
         "type": "WebGLTile",
@@ -134,13 +136,11 @@ MAP_ID = "eopf-explorer-map"
 map_widget = EOxMap(
     id=MAP_ID,
     layers=layers,
-    center=[12.5, 45],
-    zoom=11,
+    center=[1362404,5572880],
+    zoom=10,
     layout=Layout(height="600px", flex="2"),
     version="2.1.0-dev.1",
 )
-
-map_widget.zoom_extent = item["bbox"]
 
 layer_control = EOxLayercontrol(
     for_=f"#{MAP_ID}",
@@ -154,7 +154,7 @@ HBox([map_widget, layer_control], layout=Layout(width="100%"))
 <iframe src="https://raw.githack.com/EOPF-Explorer/eodash-assets/main/narratives/geozarr/eox-map-layercontrol.html" style="width: 100%; height: 600px; border: 1px solid #ccc;"></iframe>
 
 ## Tour <!--{ as="eox-map" mode="tour" }-->
-### Replicating in the Browser  <!--{ layers='[{"type":"Tile","properties":{"id":"osm-basemap","title":"OpenStreetMap"},"source":{"type":"OSM"}},{"type":"WebGLTile","properties":{"id":"geozarr-layer","title":"Sentinel-2 GeoZarr"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr","group":"measurements/reflectance","bands":["b04","b03","b02"]},"style":{"gamma":1.5,"color":["color",["interpolate",["linear"],["band",1],0,0,0.5,255],["interpolate",["linear"],["band",2],0,0,0.5,255],["interpolate",["linear"],["band",3],0,0,0.5,255],["case",["==",["+",["band",1],["band",2],["band",3]],0],0,1]]}}]' zoom="10" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
+### Replicating in the Browser  <!--{ layers='[{"type":"Tile","properties":{"id":"terrain-light","title":"Terrain Light"},"source":{"type":"XYZ","url":"https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg","projection":"EPSG:3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-layer","title":"Sentinel-2 GeoZarr"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr","group":"measurements/reflectance","bands":["b04","b03","b02"]},"style":{"gamma":1.5,"color":["color",["interpolate",["linear"],["band",1],0,0,0.5,255],["interpolate",["linear"],["band",2],0,0,0.5,255],["interpolate",["linear"],["band",3],0,0,0.5,255],["case",["==",["+",["band",1],["band",2],["band",3]],0],0,1]]}}]' zoom="10" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
 
 While the Python environment is great for exploration, sharing our discoveries often happens on the web. We can replicate this exact setup using standard HTML and the `EOxElements` web components, bringing the power of cloud-native GeoZarr data directly to the browser.
 
@@ -189,10 +189,14 @@ Here is the complete HTML code to build this view. You can copy this into an `in
     {
       "type": "Tile",
       "properties": {
-        "id": "osm-basemap",
-        "title": "OpenStreetMap",
+        "id": "terrain-light;:;EPSG:3857",
+        "title": "Terrain Light",
       },
-      "source": {"type": "OSM"},
+      "source": {
+        "type": "XYZ",
+        "url": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+        "projection": "EPSG:3857",
+      },
     },
     {
       "type": "WebGLTile",
