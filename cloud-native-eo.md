@@ -160,15 +160,15 @@ HBox([map_widget, layer_control], layout=Layout(width="100%"))
 
 While the Python environment is great for exploration, sharing our discoveries often happens on the web. We can replicate this exact setup using standard HTML and the `EOxElements` web components, bringing the power of cloud-native GeoZarr data directly to the browser.
 
-### The Power of Web Components <!--{ zoom="11" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
+### The Power of Web Components <!--{ zoom="10" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
 
 We use `eox-map` to render the map and `eox-layercontrol` for layer management. These are standard custom elements that work in any modern browser. Notice how the map renders the same GeoZarr data we explored in Python, streaming tiles on demand.
 
-### Seamless Integration <!--{ zoom='12' center='[12.3155, 45.4408]' animationOptions='{"duration": 2500}' }-->
+### Seamless Integration <!--{ zoom='10' center='[12.3155, 45.4408]' animationOptions='{"duration": 2500}' }-->
 
 The beauty of this approach is the seamless transition. In fact, this entire interactive narrative is rendered using the `<eox-storytelling>` element, which parses this Markdown file and controls the map state. The layer configuration—the source URL, the bands, the styling—is identical to our Python dictionary. This means you can prototype in a notebook and deploy to the web without rewriting your logic or converting data.
 
-### Structuring the View <!--{ zoom='12' center='[12.5375, 45.4345]' animationOptions='{"duration": 2500}' }-->
+### Structuring the View <!--{ zoom='10' center='[12.5375, 45.4345]' animationOptions='{"duration": 2500}' }-->
 
 To achieve the side-by-side layout we saw earlier with Python's `HBox`, we use the `<eox-layout>` component. It provides a flexible grid system, allowing us to place the layer control on the left and the map on the right, creating a professional dashboard feel with minimal CSS.
 
