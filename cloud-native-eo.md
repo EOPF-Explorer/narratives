@@ -5,6 +5,8 @@ In this story, we'll explore client-side rendered GeoZarr in Jupyter Notebooks a
 
 We'll start by connecting to a catalog of Sentinel-2 imagery, find a specific scene that catches our interest, and then—using GeoZarr and [EOxElements](https://github.com/EOX-A/EOxElements) based on the latest [OpenLayers dev release](https://www.npmjs.com/package/ol/v/10.7.1-dev.1768898466014) we can visualize an item in the browser using web components, and [ipyeoxelements](https://github.com/EOX-A/EOxElements-Jupyter) in a Python environment. We'll stream that high-resolution data directly onto an interactive map.
 
+> **Try it yourself:** You can follow along with the code in this story by running the [Jupyter Notebook](https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/geozarr/rendering-zarr-with-ipyeoxelements.ipynb).
+
 ## Gathering Our Tools
 
 We'll need `httpx` to communicate with the outside world (the API) and `ipyeoxelements`, our lens for viewing the geospatial data.
@@ -210,6 +212,21 @@ Here is the complete HTML code to build this view. You can copy this into an `in
         "url": "https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr",
         "group": "measurements/reflectance",
         "bands": ["b04", "b03", "b02"],
+      },
+      "style": {
+        "gamma": 1.5,
+        "color": [
+          "color",
+          ["interpolate", ["linear"], ["band", 1], 0, 0, 0.5, 255],
+          ["interpolate", ["linear"], ["band", 2], 0, 0, 0.5, 255],
+          ["interpolate", ["linear"], ["band", 3], 0, 0, 0.5, 255],
+          [
+            "case",
+            ["==", ["+", ["band", 1], ["band", 2], ["band", 3]], 0],
+            0,
+            1,
+          ],
+        ],
       },
     }
   ];
