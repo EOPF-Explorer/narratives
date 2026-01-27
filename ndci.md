@@ -207,7 +207,7 @@ This monitoring system is powered a custom version of openEO dedicated for readi
 You can reproduce, experiment and deploy you own openEO defined processes using a set of tools at you disposal on the EOPF Explorer platform:
 
 1. The **[NDCI Cyanobacteria Jupyter Notebook](https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/NDCI/openeo_ndci_cyanobacteria.ipynb)** available in the narratives repository of the project.
-2. **[openEO Studio](https://studio.explorer.eopf.copernicus.eu/editor/ndci)** - a visual interface to get started with openEO python API without caring about deploying any coding environment.
+2. **[openEO Studio](https://studio.explorer.eopf.copernicus.eu/editor/sentinel-2-ndci)** - a visual interface to get started with openEO python API without caring about deploying any coding environment.
 3. **[openEO Web Editor](https://editor.openeo.org/?server=https%3A%2F%2Fapi.explorer.eopf.copernicus.eu%2Fopeneo%2F)** - a web-based graphical editor to create and test openEO process graphs directly in your browser as well as deploy them as web services or user-defined processes.
 
 ### 📊 Data Source and Catalog
