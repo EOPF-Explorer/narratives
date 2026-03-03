@@ -51,11 +51,30 @@ The agricultural plains inland glow bright green, while the volcanic slopes of V
 
 Now for a fundamentally different approach: instead of asking a server to compute and render the tiles, we stream the **raw Zarr data** directly from object storage (S3) into the browser. [OpenLayers](https://openlayers.org/)' `GeoZarr` source fetches the data chunks on demand, and the NDVI calculation happens entirely on your GPU via WebGL.
 
-## Client-side NDVI with GeoZarr <!--{ as="eox-map" mode="tour" }-->
+This client-side rendering uses `B8A` (20 m, 865 nm narrow-band NIR), which offers better spectral definition for vegetation indices. Because the browser has direct access to the raw reflectance values, you can change band combinations, color scales, or thresholds instantly — no round-trip to a server required. **Scroll through the presets below to see how changing the NDVI range transforms the visualization.**
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi","title":"NDVI (GeoZarr client-side)"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],-0.2,["color",165,0,38],0,["color",255,255,191],0.3,["color",120,190,50],0.6,["color",0,128,0],0.9,["color",0,80,0]]}}]' center=[14.5,40.9] zoom="9" }-->
+<div style="height: 7rem"></div>
 
-This client-side rendering uses `B8A` (20 m, 865 nm narrow-band NIR), which offers better spectral definition for vegetation indices. Because the browser has direct access to the raw reflectance values, you can change band combinations, color scales, or thresholds instantly — no round-trip to a server required.
+## Client-side NDVI with GeoZarr <!--{ as="eox-map" class="overlay-br" mode="tour" }-->
+Client-side GeoZarr rendering — B8A (865 nm) & B04 (665 nm). <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
+
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi-full","title":"NDVI Full Spectrum"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],-0.2,["color",165,0,38],0,["color",255,255,191],0.3,["color",120,190,50],0.6,["color",0,128,0],0.9,["color",0,80,0]]}}]' center=[14.5,40.9] zoom="11" animationOptions="{duration:500}" }-->
+
+#### Full NDVI spectrum
+
+The full range from **−0.2 to 0.9** reveals everything at once: water and bare rock glow red (negative NDVI), urban areas and dry soil sit near yellow (zero), while vegetation spans from yellow-green to deep green. This is the classic RdYlGn color mapping — the same palette the server-side approach uses.
+
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi-veg","title":"NDVI Vegetation Only"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["case",["<",["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],0.1],["color",0,0,0,0],["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],0.1,["color",200,230,150],0.3,["color",120,190,50],0.5,["color",50,160,30],0.7,["color",0,128,0],0.9,["color",0,80,0]]]}}]' }-->
+
+#### Vegetation only
+
+By masking everything below **NDVI 0.1** as transparent, non-vegetated surfaces disappear and the satellite basemap shines through. Only pixels with active photosynthesis remain — now you can clearly separate cropland, orchards, and parkland from the surrounding urban fabric. This instant style switch is the key advantage of client-side rendering: *no new tile request needed*.
+
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi-crop","title":"NDVI Crop Health"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["case",["<",["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],0.2],["color",0,0,0,0],["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],0.2,["color",255,255,100],0.35,["color",180,220,60],0.5,["color",80,180,40],0.7,["color",0,100,0]]]}}]' }-->
+
+#### Crop health detail
+
+Zooming into the agricultural fields with a narrow **0.2 – 0.7** range stretches the green palette across the vegetation band. Subtle differences in crop vigour jump out: bright yellow-green patches may indicate recently ploughed or stressed fields, while deep green marks peak photosynthetic activity. This is the kind of precision analysis that direct access to raw reflectance values enables.
 
 ## Here's how we built this <!-- { style="margin-top: 7rem" } -->
 
@@ -74,7 +93,7 @@ The server-side NDVI you saw earlier is **[dynamically rendered](https://api.exp
 
 ### 🌐 Approach 2: Client-side rendering with GeoZarr + OpenLayers
 
-The client-side approach streams **raw Zarr data** directly from object storage to the browser. [OpenLayers](https://openlayers.org/)' `WebGLTile` layer with the `GeoZarr` source fetches data chunks on demand, and all band math and styling happens on the GPU via WebGL expressions.
+The client-side approach streams **raw Zarr data** directly from object storage to the browser. [OpenLayers](https://openlayers.org/)' `WebGLTile` layer with the `GeoZarr` source fetches data chunks on demand, and all band math and styling happens on the GPU via WebGL expressions. The preset tour above demonstrates this by switching between three NDVI color scales — each re-render is instant because the raw data is already in the browser.
 
 The Zarr store URL for any item follows the pattern:  
 **`https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/{ITEM_ID}.zarr`**
@@ -95,7 +114,7 @@ The [STAC API](https://api.explorer.eopf.copernicus.eu/stac/) provides the store
 | Rendering | Server computes & returns PNG tiles | Browser GPU via WebGL |
 | Infrastructure | Requires tile server | Only S3 / object storage |
 | Band math | URL expression parameter | WebGL style expressions |
-| Colormapping | Server-side (`colormap_name`) | Client-side (JS color scales) |
+| Colormapping | Server-side (`colormap_name`) | Client-side (WebGL style expressions) |
 | Browser requirement | Any modern browser | WebGL-capable browser |
 | Interactivity | New request per style change | Instant re-render |
 
