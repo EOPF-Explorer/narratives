@@ -47,11 +47,13 @@ Let's zoom out to see the full picture. Notice how the server-rendered NDVI tile
 
 The agricultural plains inland glow bright green, while the volcanic slopes of Vesuvius and the rocky Amalfi coastline show lower NDVI values. This regional overview is where server-side rendering really shines.
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"terrain-light","title":"Terrain Light"},"source":{"type":"XYZ","url":"https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg","projection":"EPSG:3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi","title":"NDVI (GeoZarr client-side)"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],-0.2,["color",165,0,38],0,["color",255,255,191],0.3,["color",120,190,50],0.6,["color",0,128,0],0.9,["color",0,80,0]]}}]' center=[14.5,40.9] zoom="10" animationOptions="{duration:500}" }-->
-
-#### Client-side NDVI with GeoZarr
+## Data in the browser: client-side NDVI with GeoZarr and WebGL <!-- { style="margin-top: 7rem" } -->
 
 Now for a fundamentally different approach: instead of asking a server to compute and render the tiles, we stream the **raw Zarr data** directly from object storage (S3) into the browser. [OpenLayers](https://openlayers.org/)' `GeoZarr` source fetches the data chunks on demand, and the NDVI calculation happens entirely on your GPU via WebGL.
+
+## Client-side NDVI with GeoZarr <!--{ as="eox-map" mode="tour" }-->
+
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-ndvi","title":"NDVI (GeoZarr client-side)"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a-staging/S2B_MSIL2A_20260225T095029_N0512_R079_T33TVF_20260225T141422.zarr","group":"measurements/reflectance","bands":["b04","b8a"]},"style":{"color":["interpolate",["linear"],["/",["-",["band",2],["band",1]],["+",["band",2],["band",1]]],-0.2,["color",165,0,38],0,["color",255,255,191],0.3,["color",120,190,50],0.6,["color",0,128,0],0.9,["color",0,80,0]]}}]' center=[14.5,40.9] zoom="9" }-->
 
 This client-side rendering uses `B8A` (20 m, 865 nm narrow-band NIR), which offers better spectral definition for vegetation indices. Because the browser has direct access to the raw reflectance values, you can change band combinations, color scales, or thresholds instantly — no round-trip to a server required.
 
