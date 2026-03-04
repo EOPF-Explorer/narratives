@@ -93,7 +93,7 @@ The server-side NDVI you saw earlier is **[dynamically rendered](https://api.exp
 
 ### 🌐 Approach 2: Client-side rendering with GeoZarr + OpenLayers
 
-The client-side approach streams **raw Zarr data** directly from object storage to the browser. [OpenLayers](https://openlayers.org/)' `WebGLTile` layer with the `GeoZarr` source fetches data chunks on demand, and all band math and styling happens on the GPU via WebGL expressions. The preset tour above demonstrates this by switching between three NDVI color scales — each re-render is instant because the raw data is already in the browser.
+The client-side approach streams **raw Zarr data** directly from object storage to the browser. [OpenLayers](https://openlayers.org/)' `WebGLTile` layer with the `GeoZarr` source fetches data chunks on demand, and all band math and styling happens on the GPU via WebGL expressions. The preset tour above demonstrates this by switching between three NDVI color scales — each re-render is instant because the raw data is already in the browser. Try the [interactive OpenLayers NDVI tutorial](https://explorer.eopf.copernicus.eu/software-services/ol/ndvi) with adjustable color scales and real-time parameter tweaking.
 
 The Zarr store URL for any item follows the pattern:  
 **`https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/{ITEM_ID}.zarr`**
@@ -105,26 +105,10 @@ The [STAC API](https://api.explorer.eopf.copernicus.eu/stac/) provides the store
 
 > **⚠️ Bandwidth note:** The current Zarr stores encode reflectance values as **float32** (4 bytes per pixel), which drives higher data transfer when streaming to the browser compared to uint16 or uint8 encodings. Work is underway in the Zarr community to support more compact encodings — see the [Zarr codecs extension discussion](https://github.com/zarr-developers/zarr-extensions/issues/42) for progress.
 
-> **Learn more:** Try the [interactive OpenLayers NDVI tutorial](https://explorer.eopf.copernicus.eu/software-services/ol/ndvi) with adjustable color scales and real-time parameter tweaking.
-
-### ⚖️ Comparison at a glance
-
-| Aspect | Server-side (TiTiler) | Client-side (GeoZarr) |
-|---|---|---|
-| Rendering | Server computes & returns PNG tiles | Browser GPU via WebGL |
-| Infrastructure | Requires tile server | Only S3 / object storage |
-| Band math | URL expression parameter | WebGL style expressions |
-| Colormapping | Server-side (`colormap_name`) | Client-side (WebGL style expressions) |
-| Browser requirement | Any modern browser | WebGL-capable browser |
-| Interactivity | New request per style change | Instant re-render |
-
 ### 📊 Data Catalog
 Browse and discover available datasets through our comprehensive catalog:
 
 **`https://api.explorer.eopf.copernicus.eu/browser/`**
-
-### 📐 Data model update
-The latest data model (processing baseline N0512+) simplifies band paths: resolution subgroups like `/r10m` are no longer needed. For example, `/measurements/reflectance:b04` replaces the former `/measurements/reflectance/r10m:b04`. Resolution levels are now handled natively by [Zarr multiscales conventions](https://github.com/zarr-conventions/multiscales).
 
 <div style="height: 7rem"></div>
 
@@ -145,7 +129,6 @@ Here as false color IR (B08, B04, B03), in August 2025 over Northern Portugal
 
 ## Build your own interface using Zarr! <!-- { style="margin-top: 7rem" } -->
 
-This story was built with `eox-storytelling` and `eox-map`
-https://github.com/EOX-A/EOxElements
+This story was built with `eox-storytelling` and `eox-map`. Learn about [`EOxElements` here](/software-services/eoxelements/)
 
-For a full-fledged EO dashboard interface that works with Zarr, use https://github.com/eodash/eodash
+For a full-fledged EO dashboard interface that works with Zarr, use [`eodash`](/software-services/eodash/).
