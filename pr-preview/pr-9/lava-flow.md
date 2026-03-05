@@ -108,28 +108,6 @@ Values range from −1 to +1. Healthy, vegetated areas appear in **blue** (high 
 
 The total area of the lava field — approximately 1,200 hectares — is laid bare in a single index. What took weeks of ground surveys can be seen at a glance from space.
 
-## The Formula for Fire <!-- { style="margin-top: 7rem" } -->
-
-Throughout this story, we used three different visualization techniques to see what's invisible to the naked eye. Each reveals a different aspect of the eruption:
-
-### False Color Infrared (B08, B04, B03)
-
-By mapping the *Near-Infrared* band (B08 at 842 nm) to the red display channel, we leverage the fact that healthy vegetation reflects NIR light very strongly. In this composite, living plants glow bright red while bare rock, lava, and ash appear dark. This makes it ideal for mapping the *extent of destruction* — where vegetation has been incinerated or buried.
-
-### SWIR Composite (B12, B11, B04)
-
-The *Short-Wave Infrared* composite maps B12 (~2190 nm) and B11 (~1610 nm) to the red and green channels. At these wavelengths:
-
-*   **Hot surfaces glow** — lava above ~500°C emits strongly, making active flows appear as vivid orange and red channels.
-*   **Smoke becomes transparent** — SWIR wavelengths penetrate ash and smoke plumes that completely obscure the view in visible light.
-*   **Background context** — B04 (visible red) in the blue channel provides familiar geographic context for cooler areas.
-
-The combination `(B12, B11, B04)` is a standard "Atmospheric Penetration" composite, widely used for fire and volcanic monitoring.
-
-### Normalized Burn Ratio: (B08 − B12) / (B08 + B12)
-
-The *NBR* is a single-value spectral index that quantifies the severity of surface change. Healthy vegetation has high B08 (NIR) reflectance and low B12 (SWIR) reflectance, yielding a high positive NBR. Bare lava and burned ground show the opposite pattern, producing low or negative values. Displayed with a **red-blue** colormap, the affected area becomes immediately and precisely distinguishable from the surrounding landscape.
-
 ## Here's how we built this <!-- { style="margin-top: 7rem" } -->
 
 The full story narrative is available open source [here](https://github.com/EOPF-Explorer/narratives/blob/main/lava-flow.md).
@@ -138,7 +116,15 @@ This interactive story is powered by [software and services](/software-services)
 
 ### 🌐 TiTiler
 
-The dynamic tile serving, band combination, and index computation is handled by **[TiTiler](https://github.com/EOPF-Explorer/titiler-eopf)**. It allows us to access the raw Zarr data from the Copernicus archive and render RGB composites, false-color visualizations, and computed spectral indices on-the-fly — without pre-generating images. Learn how to build your own visualizations in the **[TiTiler integration guide](/software-services/titiler)**.
+The dynamic tile serving, band combination, and index computation is handled by **[TiTiler](https://github.com/EOPF-Explorer/titiler-eopf)**. It allows us to access the raw Zarr data from the Copernicus archive and render RGB composites, false-color visualizations, and computed spectral indices on-the-fly — without pre-generating images.
+
+Throughout this story, we used three visualization techniques — each revealing a different aspect of the eruption:
+
+*   **False Color Infrared (B08, B04, B03)** — Near-Infrared (842 nm) mapped to the red channel makes healthy vegetation glow bright red while lava and ash appear dark, ideal for mapping the *extent of destruction*.
+*   **SWIR Composite (B12, B11, B04)** — Short-Wave Infrared bands penetrate smoke and make active lava flows (>500°C) glow vivid orange and red. This "Atmospheric Penetration" composite is the standard for fire and volcanic monitoring.
+*   **NBR Index: (B08 − B12) / (B08 + B12)** — The Normalized Burn Ratio quantifies surface change on a −1 to +1 scale. Healthy vegetation yields high positive values (**blue**), while lava-covered ground produces low or negative values (**red**), making the affected area immediately distinguishable.
+
+Learn how to build your own visualizations in the **[TiTiler integration guide](/software-services/titiler)**.
 
 ### 📊 EOxElements & eodash
 
