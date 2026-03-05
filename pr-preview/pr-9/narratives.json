@@ -3,25 +3,25 @@
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-9/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_b4aa1201-93a2-47c8-a107-d27e005ea159_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_4b91c609-a4f9-4d36-8801-05d87b5359a0_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-9/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_30017731-5d4a-4822-b7e2-572628b33a32_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_0d8897d0-5e7a-4324-8e44-62045afc8dbf_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-9/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_9725ac90-9069-4c23-9ac0-00d5a13b4bb2_preview.png"
+    "image": "assets/previews/fig1_3bc91e0e-baf7-48eb-a6d4-912941f856b8_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-9/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_9503e6e1-d31a-4104-a521-14f1edcef95c_preview.png"
+    "image": "assets/previews/hero_8596377d-1157-4ac0-926f-0d62a326ab8a_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-9/plan-lavaFlow.prompt.md",
