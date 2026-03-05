@@ -130,16 +130,15 @@ The *NBR* is a single-value spectral index that quantifies the severity of surfa
 
 ## Here's how we built this <!-- { style="margin-top: 7rem" } -->
 
-This interactive story is powered by modern Earth Observation technologies:
+The full story narrative is available open source [here](https://github.com/EOPF-Explorer/narratives/blob/main/lava-flow.md).
+
+This interactive story is powered by [software and services](/software-services) of EOPF Explorer:
 
 ### 🌐 TiTiler
 
-The dynamic tile serving, band combination, and index computation is handled by **[TiTiler](https://developmentseed.org/titiler/)** (specifically `titiler-eopf`). It allows us to access the raw Zarr data from the Copernicus archive and render RGB composites, false-color visualizations, and computed spectral indices on-the-fly — without pre-generating images. Learn how to build your own visualizations in the **[TiTiler RGB integration guide](/software-services/titiler/rgb)**.
+The dynamic tile serving, band combination, and index computation is handled by **[TiTiler](https://github.com/EOPF-Explorer/titiler-eopf)**. It allows us to access the raw Zarr data from the Copernicus archive and render RGB composites, false-color visualizations, and computed spectral indices on-the-fly — without pre-generating images. Learn how to build your own visualizations in the **[TiTiler integration guide](/software-services/titiler)**.
 
 ### 📊 EOxElements & eodash
 
-The interface you are using is built with **[EOxElements](https://github.com/EOX-A/EOxElements)** (specifically `eox-storytelling` and `eox-map`). For a more complex dashboard experience to explore this data further, check out **[eodash](https://eodash.eox.at/)**.
+The interface you are using is built with **[EOxElements](https://github.com/EOX-A/EOxElements)** (specifically `eox-storytelling` and `eox-map`). Learn how to create your own story in the **[EOxElements integration guide](/software-services/eoxelements)**
 
-### 🛰️ Complementary missions
-
-While Sentinel-2 excels at high-resolution optical and SWIR imagery, volcanic monitoring benefits from the full Copernicus constellation. **Sentinel-5P** and its TROPOMI instrument can directly measure sulphur dioxide (SO₂) concentrations in the atmosphere — providing the chemical context that complements the spatial detail shown here.
