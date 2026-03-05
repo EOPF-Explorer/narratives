@@ -1,26 +1,32 @@
 [
   {
-    "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
-    "title": "Monitoring Cyanobacteria in Venice Lagoon",
-    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_e8617eb7-ff3e-4b24-b3aa-e95f17ea8a78_preview.png"
-  },
-  {
     "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_089350eb-3ed5-4ebf-8185-edcb1f95c242_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_430c3f7c-5c84-4982-b9ac-e89034be3af8_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
-    "subtitle": "Witnessing the 2021 Cumbre Vieja eruption through the eyes of Sentinel-2 satellites.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_aa90e9fe-1027-4355-bbc5-6c911601dcad_preview.png"
+    "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_be4756dd-d062-4cb6-bad4-e304a8a31508_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_c31d590b-5df4-4fd0-82cf-c8dff584e6a5_preview.png"
+    "image": "assets/previews/fig1_d5201a1d-cfb7-462e-a60b-a09c9d8ba460_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
+    "title": "Monitoring Cyanobacteria in Venice Lagoon",
+    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
+    "image": "assets/previews/hero_4b2f784a-1682-49a9-85fe-c1737c341f01_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/plan-lavaFlow.prompt.md",
+    "title": "",
+    "subtitle": "",
+    "image": ""
   }
 ]
