@@ -1,4 +1,4 @@
-# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://github.com/EOPF-Explorer/eodash-assets/blob/main/narratives/NDCI/hero.png?raw=true" }-->
+# Monitoring Cyanobacteria in Venice Lagoon <!--{ as="img" mode="hero" src="https://raw.githubusercontent.com/EOPF-Explorer/eodash-assets/refs/heads/main/narratives/NDCI/hero.png" }-->
 
 #### Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data <!--{ style="font-size:1rem;opacity:0.7;margin-top:1rem;" }-->
 
