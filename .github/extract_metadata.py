@@ -11,9 +11,7 @@ import uuid
 
 # Get base URL from command-line argument or set a default
 BASE_URL = (
-    sys.argv[1]
-    if len(sys.argv) > 1
-    else "https://EOPF-Explorer.github.io/narratives/"
+    sys.argv[1] if len(sys.argv) > 1 else "https://EOPF-Explorer.github.io/narratives/"
 )
 
 
@@ -118,7 +116,12 @@ os.makedirs(output_dir, exist_ok=True)
 metadata_list = []
 for root, _, files in os.walk("."):
     for file in files:
-        if file.endswith(".md") and file != "README.md" and "scripts" not in root:
+        if (
+            file.endswith(".md")
+            and ".prompt" not in file
+            and file != "README.md"
+            and "scripts" not in root
+        ):
             file_path = os.path.join(root, file)
             metadata = extract_metadata(file_path, BASE_URL)
             if any(metadata.values()):
