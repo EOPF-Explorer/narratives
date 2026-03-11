@@ -129,6 +129,6 @@ Here as false color IR (B08, B04, B03), in August 2025 over Northern Portugal
 
 ## Build your own interface using Zarr! <!-- { style="margin-top: 7rem" } -->
 
-This story was built with `eox-storytelling` and `eox-map`. Learn about [`EOxElements` here](/software-services/eoxelements/)
+This story was built with `eox-storytelling` and `eox-map` of [`EOxElements`](/software-services/eoxelements/).
 
 For a full-fledged EO dashboard interface that works with Zarr, use [`eodash`](/software-services/eodash/).
