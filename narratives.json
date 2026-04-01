@@ -1,26 +1,26 @@
 [
   {
-    "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
-    "title": "A Journey into Cloud-Native Earth Observation",
-    "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_65b97b1d-3be8-4fcd-a1c8-3b826cd1dd3f_preview.png"
-  },
-  {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_8cc394c5-0af3-4b6e-b2a8-06f6935e279c_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_5c264d7e-b459-423a-a00f-ee656717ee65_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
+    "title": "A Journey into Cloud-Native Earth Observation",
+    "subtitle": "Replicating in the Browser",
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_796891f2-628a-4539-b4a3-1fc85e4599db_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_217c09a1-5b96-4a5d-858f-ab3c7b5518ab_preview.png"
+    "image": "assets/previews/fig1_e76d36d2-77f5-406b-86a4-933af1af46e3_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_df63c11c-5858-4d58-9b61-53e2d30064f6_preview.png"
+    "image": "assets/previews/hero_14e1b5c8-c1fc-4c15-95c6-9b477be9ef67_preview.png"
   }
 ]
