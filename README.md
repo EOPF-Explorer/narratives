@@ -12,6 +12,26 @@ The technical features they demonstrate are:
 
 All stories also include a section about the services and software features they rely on. Thanks to these features, the authoring of the stories requires no data pre-processing – you can start writing right away. 
 
+## Contributions welcome
+
+We welcome contributions. Please note our license and the following instructions:
+
+### Structure
+
+- Markdown story files must be placed in the **root of the repository** to be picked up by the storytelling engine.
+- Do **not** store assets (images, videos, data files) in this repo.
+
+### Assets
+
+Upload assets to [EOPF-Explorer/eodash-assets](https://github.com/EOPF-Explorer/eodash-assets) and reference them via:
+
+- GitHub raw URL: `https://raw.githubusercontent.com/EOPF-Explorer/eodash-assets/main/<path>`
+- rawgit CDN (cache-friendly): `https://raw.githack.com/EOPF-Explorer/eodash-assets/main/<path>`
+
+### Preview
+
+When a pull request is opened, a bot will post a comment with a link to the live preview of the story. No manual steps required.
+
 ## Coding agents
 
 There is an MCP (Model Context Protocol) service available that enables coding agents (Copilot, Claude Code, et al.) to compose the eodash storytelling elements reliably. Details will follow shortly.
