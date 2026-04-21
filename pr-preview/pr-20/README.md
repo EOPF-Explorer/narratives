@@ -46,7 +46,7 @@ Data that is featured in stories will remain published throughout the duration o
 
 ## License
 
-All content is published under CC0 (Public Domain). See LICENSE.
+All content is published under CC0 (Public Domain). See [LICENSE](./LICENSE).
 
 
 ## Questions and support
