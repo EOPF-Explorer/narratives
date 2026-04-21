@@ -34,7 +34,40 @@ When a pull request is opened, a bot will post a comment with a link to the live
 
 ## Coding agents
 
-There is an MCP (Model Context Protocol) service available that enables coding agents (Copilot, Claude Code, et al.) to compose the eodash storytelling elements reliably. Details will follow shortly.
+The [EOxElements MCP](https://eox-a.github.io/EOxElements/?path=/docs/coding-agents--docs) (Model Context Protocol) service is available to enable coding agents (Copilot, Claude Code, et al.) to compose the eodash storytelling special markdown syntax reliably.
+
+### Installation
+
+**Option 1 -- hosted server (no install required):**
+
+Add `https://elements.mcp.eox.at` as an MCP server in your coding agent settings.
+
+**Option 2 -- local install:**
+
+```bash
+npm install -g @eox/elements-mcp-server
+elements-mcp-server
+```
+The server will be available at `http://localhost:3000/mcp`. Add that URL as an MCP server in your coding agent settings.
+
+### Starter prompt
+
+Use the following prompt to get started:
+
+```prompt
+Use the EOxElements MCP to fetch the `eox-storytelling` element stories and documentation.
+Read through the fetched stories to understand the special markdown syntax -- the available
+section types, map blocks, chart blocks, metadata properties, and any other supported elements.
+
+Once you have a clear picture of the syntax, ask me what narrative I want to write. I will
+describe the topic, the data sources, and the message I want to convey. You will then draft
+a `.md` story file in the root of this repository following the eox-storytelling markdown
+conventions you learned.
+
+If a block type or property is unclear, re-fetch the relevant story
+example from the MCP before writing.
+```
+
 
 
 ## Catalogue persistence
