@@ -68,11 +68,11 @@ With our item identified, we need to translate it into something our map can und
 
 ```python
 def get_geozarr_store(item):
-    """Construct the GeoZarr URL from the STAC item links."""
-    for link in item["links"]:
-        if link["rel"] == "store":
-            print(f"Zarr store link: {link['href']}")
-            return link["href"]
+    """Get the GeoZarr multiscales group URL from the STAC item assets."""
+    for asset in item.get("assets", {}).values():
+        if asset.get("type") == "application/vnd.zarr; version=3; profile=multiscales":
+            print(f"Zarr asset: {asset['href']}")
+            return asset["href"]
 
 
 layers = []
@@ -103,7 +103,6 @@ layers = [
         "source": {
             "type": "GeoZarr",
             "url": zarr_url,
-            "group": "measurements/reflectance",
             "bands": ["b04", "b03", "b02"],  # true color composite
         },
         "style": {
@@ -156,7 +155,7 @@ HBox([map_widget, layer_control], layout=Layout(width="100%"))
 <iframe src="https://raw.githack.com/EOPF-Explorer/eodash-assets/main/narratives/geozarr/eox-map-layercontrol.html" style="width: 100%; height: 600px; border: 1px solid #ccc;"></iframe>
 
 ## Tour <!--{ as="eox-map" mode="tour" }-->
-### Replicating in the Browser  <!--{ layers='[{"type":"Tile","properties":{"id":"terrain-light","title":"Terrain Light"},"source":{"type":"XYZ","url":"https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg","projection":"EPSG:3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-layer","title":"Sentinel-2 GeoZarr"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr","group":"measurements/reflectance","bands":["b04","b03","b02"]},"style":{"gamma":1.5,"color":["color",["interpolate",["linear"],["band",1],0,0,0.5,255],["interpolate",["linear"],["band",2],0,0,0.5,255],["interpolate",["linear"],["band",3],0,0,0.5,255],["case",["==",["+",["band",1],["band",2],["band",3]],0],0,1]]}}]' zoom="10" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
+### Replicating in the Browser  <!--{ layers='[{"type":"Tile","properties":{"id":"terrain-light","title":"Terrain Light"},"source":{"type":"XYZ","url":"https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg","projection":"EPSG:3857"}},{"type":"WebGLTile","properties":{"id":"geozarr-layer","title":"Sentinel-2 GeoZarr"},"source":{"type":"GeoZarr","url":"https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr/measurements/reflectance","bands":["b04","b03","b02"]},"style":{"gamma":1.5,"color":["color",["interpolate",["linear"],["band",1],0,0,0.5,255],["interpolate",["linear"],["band",2],0,0,0.5,255],["interpolate",["linear"],["band",3],0,0,0.5,255],["case",["==",["+",["band",1],["band",2],["band",3]],0],0,1]]}}]' zoom="10" center='[12.4, 45.2]' animationOptions='{"duration": 2500}' }-->
 
 While the Python environment is great for exploration, sharing our discoveries often happens on the web. We can replicate this exact setup using standard HTML and the `EOxElements` web components, bringing the power of cloud-native GeoZarr data directly to the browser.
 
@@ -209,8 +208,7 @@ Here is the complete HTML code to build this view. You can copy this into an `in
       },
       "source": {
         "type": "GeoZarr",
-        "url": "https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr",
-        "group": "measurements/reflectance",
+        "url": "https://s3.explorer.eopf.copernicus.eu/esa-zarr-sentinel-explorer-fra/tests-output/sentinel-2-l2a/S2A_MSIL2A_20251107T100231_N0511_R122_T32TQR_20251107T115310.zarr/measurements/reflectance",
         "bands": ["b04", "b03", "b02"],
       },
       "style": {
