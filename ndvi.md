@@ -113,19 +113,19 @@ Browse and discover available datasets through our comprehensive catalog:
 <div style="height: 7rem"></div>
 
 ## Different date, different time <!--{ as="eox-map" class="overlay-br" mode="tour" }-->
-Copernicus data 2025. <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
+Copernicus data 2026. <!--{ style="opacity: 0.75; font-size: 1rem;" }-->
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2B_MSIL2A_20250804T103629_N0511_R008_T31TDH_20250804T130722/tiles/WebMercatorQuad/{z}/{x}/{y}.png?expression=(/measurements/reflectance/r10m:b08-/measurements/reflectance/r10m:b04)/(/measurements/reflectance/r10m:b08%2b/measurements/reflectance/r10m:b04)&rescale=-1,1&colormap_name=rdylgn"}}]' center=[2.88,43.05] zoom="12" }-->
-#### Before Wildfires
-NDVI from 20250804 over Southern France, before the devastating wildfires.
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2A_MSIL2A_20250831T103701_N0511_R008_T31TDH_20250831T145420/tiles/WebMercatorQuad/{z}/{x}/{y}.png?expression=(/measurements/reflectance/r10m:b08-/measurements/reflectance/r10m:b04)/(/measurements/reflectance/r10m:b08%2b/measurements/reflectance/r10m:b04)&rescale=-1,1&colormap_name=rdylgn"}}]' center=[2.88,43.05] zoom="12" }-->
-#### After Wildfires
-NDVI from 20250819 over Southern France, after the devastating wildfires. We can see the burns scars.
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2C_MSIL2A_20260708T104621_N0512_R051_T31UDP_20260708T143310/tiles/WebMercatorQuad/{z}/{x}/{y}.png?expression=(/measurements/reflectance:b08-/measurements/reflectance:b04)/(/measurements/reflectance:b08%2b/measurements/reflectance:b04)&rescale=-1,1&colormap_name=rdylgn"}}]' center=[2.55,48.38] zoom="12" }-->
+#### Before the fire
+NDVI from 20260708 over the Forest of Fontainebleau, south-east of Paris. Dense summer canopy reads as deep green.
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2B_MSIL2A_20260713T104619_N0512_R051_T31UDP_20260713T131840/tiles/WebMercatorQuad/{z}/{x}/{y}.png?expression=(/measurements/reflectance:b08-/measurements/reflectance:b04)/(/measurements/reflectance:b08%2b/measurements/reflectance:b04)&rescale=-1,1&colormap_name=rdylgn"}}]' center=[2.55,48.38] zoom="12" }-->
+#### During the fire
+NDVI from 20260713, while the fire was still burning. The smoke plume drifting west hides the fire front — NDVI cannot see through it.
 
-### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250811T112131_N0511_R037_T29TPF_20250811T152216/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance/r10m:b08&variables=/measurements/reflectance/r10m:b04&variables=/measurements/reflectance/r10m:b03&rescale=0,0.3"}}]' center=[-7,41] zoom="12" }-->
+### <!--{ layers='[{"type":"Tile","properties":{"id":"background"},"source":{"type":"WMTSCapabilities","url":"https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml","layer":"s2cloudless-2022_3857"}},{"type":"Tile","properties":{"id":"s-2-l2a"},"source":{"type":"XYZ","url": "https://api.explorer.eopf.copernicus.eu/raster/collections/sentinel-2-l2a/items/S2B_MSIL2A_20260713T104619_N0512_R051_T31UDP_20260713T131840/tiles/WebMercatorQuad/{z}/{x}/{y}.png?variables=/measurements/reflectance:b12&variables=/measurements/reflectance:b11&variables=/measurements/reflectance:b04&rescale=0,0.4"}}]' center=[2.55,48.38] zoom="12" }-->
 #### ... and band combinations of your choice
 
-Here as false color IR (B08, B04, B03), in August 2025 over Northern Portugal
+The same scene, the same moment — but in SWIR (B12, B11, B04) the smoke turns translucent and the active fire fronts glow.
 
 ## Build your own interface using Zarr! <!-- { style="margin-top: 7rem" } -->
 
