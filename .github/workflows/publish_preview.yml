@@ -65,7 +65,7 @@ jobs:
       - if: github.event.action != 'closed' && steps.get_pr_commit_message.outputs.should_skip != 'true'
         name: Find existing comment
         id: find-comment
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@v4
         with:
           issue-number: ${{ env.PR_NUMBER }}
           comment-author: github-actions
