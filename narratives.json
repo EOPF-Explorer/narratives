@@ -1,26 +1,26 @@
 [
   {
-    "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
-    "title": "A Journey into Cloud-Native Earth Observation",
-    "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_f69167db-5b1a-47f7-af31-5286e94335f5_preview.png"
-  },
-  {
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_6edd548c-01e4-474a-b886-2d951c74633f_preview.png"
-  },
-  {
-    "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
-    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
-    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_0bf4bb1b-124f-43d9-99dd-998f53b486ce_preview.png"
+    "image": "assets/previews/hero_6e54a77e-866b-4199-b72a-77a5737179b6_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_acf9f4ce-66e2-4c80-a760-6da33158c62d_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_100ad3e6-05e7-49f6-86e2-37a85a99c97b_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
+    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
+    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
+    "image": "assets/previews/fig1_188336b5-d98f-43d4-b316-5b4f0c9100dc_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
+    "title": "A Journey into Cloud-Native Earth Observation",
+    "subtitle": "Replicating in the Browser",
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_eb315f42-96a0-44b9-af60-809f436f806c_preview.png"
   }
 ]
