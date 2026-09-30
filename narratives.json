@@ -3,24 +3,24 @@
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_6e54a77e-866b-4199-b72a-77a5737179b6_preview.png"
-  },
-  {
-    "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
-    "title": "River of Fire: La Palma Visualized",
-    "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_100ad3e6-05e7-49f6-86e2-37a85a99c97b_preview.png"
+    "image": "assets/previews/hero_3040551c-cdd4-47a0-acd5-e74326464689_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_188336b5-d98f-43d4-b316-5b4f0c9100dc_preview.png"
+    "image": "assets/previews/fig1_8d4faa9c-4209-4cb6-806f-69e09737cc68_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
+    "title": "River of Fire: La Palma Visualized",
+    "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_ea7497d0-07d6-4936-af4e-41f2f5caec70_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_eb315f42-96a0-44b9-af60-809f436f806c_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_353d19b6-2c8d-4b12-bd37-8e68126b2d6a_preview.png"
   }
 ]
