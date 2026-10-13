@@ -3,24 +3,24 @@
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-29/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_03bc8e67-b8ca-46d3-b569-101bf3a73c8a_preview.png"
+    "image": "assets/previews/hero_9d72370c-2b3f-4ae1-b515-79820ec2ad46_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-29/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_2076eb58-b09c-4b0a-b1f2-f507292cacac_preview.png"
+    "image": "assets/previews/fig1_693abae5-336d-46c6-9ec8-ee613959f079_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-29/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_90a6fbd8-647b-40bb-bfb5-3dc171cdb614_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_695e1f5c-3065-44a4-bdd5-07add22ef1bb_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-29/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_19408494-c782-4acd-8417-0877161cd0eb_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_004f623b-976f-4e52-86f9-4b88e016c3a0_preview.png"
   }
 ]
