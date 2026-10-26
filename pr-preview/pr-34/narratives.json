@@ -1,0 +1,26 @@
+[
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-34/lava-flow.md",
+    "title": "River of Fire: La Palma Visualized",
+    "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_6a625945-e6bd-46da-98b1-a18748b60f63_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-34/ndvi.md",
+    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
+    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
+    "image": "assets/previews/fig1_12256989-924a-4fdb-8d7f-6e41750c9aa3_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-34/ndci.md",
+    "title": "Monitoring Cyanobacteria in Venice Lagoon",
+    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
+    "image": "assets/previews/hero_dc0f4d44-6de9-4d41-902d-19e2f28b33c8_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-34/cloud-native-eo.md",
+    "title": "A Journey into Cloud-Native Earth Observation",
+    "subtitle": "Replicating in the Browser",
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_67a7e91a-ce74-4397-955a-c9d3f03e1737_preview.png"
+  }
+]
