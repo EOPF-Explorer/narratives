@@ -3,24 +3,24 @@
     "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_6ce3873c-0a44-41b6-80d4-159b9ecbe9fc_preview.png"
-  },
-  {
-    "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
-    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
-    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_8a518af8-39c9-4a77-b875-acdaa2e2de2b_preview.png"
+    "image": "assets/previews/hero_efa77b16-c1c1-4d06-aafa-65d9dc895571_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_5f0b375b-1376-48a0-83c0-4e111f1b5e7d_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_66e0f532-feb2-40e0-9c1c-6b97b930460c_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_29e8059e-e210-429d-81a6-b6ca700b886d_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_b2b5d04c-2b86-4899-b11f-52095a1f5d9c_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
+    "title": "Unveiling the Green: Visualizing NDVI from Zarr",
+    "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
+    "image": "assets/previews/fig1_87596179-74ec-4431-aa5c-509ec4cfe249_preview.png"
   }
 ]
