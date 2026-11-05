@@ -23,7 +23,7 @@ jobs:
     name: Deploy changed-files
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           submodules: 'true'
           ref: refs/pull/${{ env.PR_NUMBER }}/merge
@@ -58,21 +58,21 @@ jobs:
           touch output/.nojekyll
       - if: steps.get_pr_commit_message.outputs.should_skip != 'true'
         name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
         with:
           source-dir: ./output/
           comment: false
       - if: github.event.action != 'closed' && steps.get_pr_commit_message.outputs.should_skip != 'true'
         name: Find existing comment
         id: find-comment
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4.0.0
         with:
           issue-number: ${{ env.PR_NUMBER }}
           comment-author: github-actions
           body-includes: 'Preview ready!'
       - if: github.event.action != 'closed' && steps.get_pr_commit_message.outputs.should_skip != 'true'
         name: Create or update preview comment
-        uses: peter-evans/create-or-update-comment@v5
+        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
         with:
           issue-number: ${{ env.PR_NUMBER }}
           body: |
