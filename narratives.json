@@ -1,26 +1,26 @@
 [
   {
-    "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
-    "title": "Monitoring Cyanobacteria in Venice Lagoon",
-    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_efa77b16-c1c1-4d06-aafa-65d9dc895571_preview.png"
-  },
-  {
     "file": "https://EOPF-Explorer.github.io/narratives/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_66e0f532-feb2-40e0-9c1c-6b97b930460c_preview.png"
+    "image": null
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_b2b5d04c-2b86-4899-b11f-52095a1f5d9c_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_e1626826-ec57-4b34-8ffe-90ae0df19dc0_preview.png"
+  },
+  {
+    "file": "https://EOPF-Explorer.github.io/narratives/ndci.md",
+    "title": "Monitoring Cyanobacteria in Venice Lagoon",
+    "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
+    "image": "assets/previews/hero_e9b2683e-3534-4f66-b8a1-9b7a6d39c475_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_87596179-74ec-4431-aa5c-509ec4cfe249_preview.png"
+    "image": "assets/previews/fig1_e67802e8-6969-4357-aad9-a59c29ebced6_preview.png"
   }
 ]
