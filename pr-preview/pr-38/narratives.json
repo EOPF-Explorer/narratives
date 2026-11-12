@@ -3,24 +3,24 @@
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-38/lava-flow.md",
     "title": "River of Fire: La Palma Visualized",
     "subtitle": "Tracing the 85-day eruption of Cumbre Vieja through the eyes of Copernicus Sentinel-2, from the first explosion on September 19, 2021 to the silent aftermath in January 2022.",
-    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_aa8469fc-eaad-4842-8451-42ae7a444a55_preview.png"
+    "image": "assets/previews/New_lava_river_captured_by_Copernicus_Sentinel-2_pillars_728b35a4-77e6-4ba7-8e95-464c5e821b04_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-38/cloud-native-eo.md",
     "title": "A Journey into Cloud-Native Earth Observation",
     "subtitle": "Replicating in the Browser",
-    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_12379d73-3076-4833-9fee-911b4dfbe686_preview.png"
+    "image": "assets/previews/photo-1633421878925-ac220d8f6e4f_fae63271-3301-4ebb-9f13-c0ab3e00c589_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-38/ndci.md",
     "title": "Monitoring Cyanobacteria in Venice Lagoon",
     "subtitle": "Real-time chlorophyll-a detection using the Normalised Difference Chlorophyll Index and satellite data",
-    "image": "assets/previews/hero_958373c8-1f4e-4463-900c-31b4635424be_preview.png"
+    "image": "assets/previews/hero_0dc1f114-cc78-4de5-82f1-0d27172b3166_preview.png"
   },
   {
     "file": "https://EOPF-Explorer.github.io/narratives/pr-preview/pr-38/ndvi.md",
     "title": "Unveiling the Green: Visualizing NDVI from Zarr",
     "subtitle": "Showing the classical NDVI example powered by the Zarr file format. Scroll down to get started!",
-    "image": "assets/previews/fig1_98f1add6-9322-4755-b6c4-57ebeec2752e_preview.png"
+    "image": "assets/previews/fig1_a6633634-3340-4160-9808-2b373cefe2e8_preview.png"
   }
 ]
